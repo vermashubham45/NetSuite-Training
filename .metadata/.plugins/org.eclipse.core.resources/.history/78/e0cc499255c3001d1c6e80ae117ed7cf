@@ -1,0 +1,190 @@
+/**
+ * @NApiVersion 2.x
+ * @NScriptType MapReduceScript
+ * @NModuleScope SameAccount
+ */
+define([ 'N/search', 'N/email' ],
+
+function(search, email) {
+
+	/**
+	 * Marks the beginning of the Map/Reduce process and generates input data.
+	 *
+	 * @typedef {Object} ObjectRef
+	 * @property {number} id - Internal ID of the record instance
+	 * @property {string} type - Record type id
+	 *
+	 * @return {Array|Object|Search|RecordRef} inputSummary
+	 * @since 2015.1
+	 */
+	function getInputData() {
+		try {
+			var folderSearchObj = search.create({
+				   type: "folder",
+				   filters:
+				   [
+				      ["internalid","anyof","13603"]
+				   ],
+				   columns:
+				   [
+				      search.createColumn({
+				         name: "internalid",
+				         join: "file",
+				         label: "File Id"
+				      })
+				   ]
+				});
+				var searchResultCount = folderSearchObj.runPaged().count;
+				log.debug("folderSearchObj result count",searchResultCount);
+				var fileId;
+				folderSearchObj.run().each(function(result){
+				   // .run().each has a limit of 4,000 results
+					
+					fileId = result.getValue({name: "internalid",join: "file"});
+				   return true;
+				});
+				
+				return fileId;
+
+				
+			
+		} catch (e) {
+			log.error('Error in getInputData : ', e);
+		}
+
+	}
+
+	/**
+	 * Executes when the map entry point is triggered and applies to each key/value pair.
+	 *
+	 * @param {MapSummary} context - Data collection containing the key/value pairs to process through the map stage
+	 * @since 2015.1
+	 */
+	function map(context) {
+		try {
+			log.debug('map function is started  ');
+
+			var invoiceValue = JSON.parse(context.value);
+			log.debug('invoiceValue', invoiceValue);
+
+			var fileId = 94115;
+				id: 94115
+			var fileObj = file.load({
+				id: fileId
+			});
+			if (fileObj.size < 10485760){
+				var fileContent = fileObj.getContents();
+				log.debug('fileContent:',fileContent);
+			}
+		
+			context.write({
+				key : m_custTrainid,
+				value : {
+					
+
+				}
+			});
+
+		} catch (e) {
+			log.error('Error in map : ', e);
+		}
+
+	}
+
+	/**
+	 * Executes when the reduce entry point is triggered and applies to each group.
+	 *
+	 * @param {ReduceSummary} context - Data collection containing the groups to process through the reduce stage
+	 * @since 2015.1
+	 */
+	function reduce(context) {
+		try {
+			log.debug('In reduce Stage');
+			log.debug('key :', context.key);
+			log.debug('value:', context.values);
+			log.debug('value Length:', context.values.length);
+
+			// storing value and value length in new variable//			
+			var value = context.values;
+			var value_Length = context.values.length;
+
+			var r_custName;
+			var r_custTrainid;
+			var r_custAmount;
+			var r_custEmail;
+
+				var invoiceValue = JSON.parse(context.value);
+				log.debug('invoiceValue', invoiceValue);
+
+				r_custName = invoiceValue.m_custName;
+				log.debug('r_custName', r_custName);
+				r_custTrainid = invoiceValue.m_custTrainid;
+				log.debug('r_custTrainid', r_custTrainid);
+				r_custAmount = invoiceValue.m_custAmount;
+				log.debug('r_custAmount', r_custAmount);
+				r_custEmail = invoiceValue.m_custEmail;
+				log.debug('r_custEmail', r_custEmail);
+
+
+
+			
+
+				var objRecord = record.create({
+					type: record.Type.INVOICE,
+					isDynamic: true
+				});
+				
+				objRecord.setValue('entity',r_custName);
+				objRecord.setValue('entity',r_custName);
+				objRecord.setValue('entity',r_custName);
+				
+				objRecord.setSublistValue({
+					sublistId: 'item',
+					fieldId: 'item',
+					line: 0,
+					value: 123
+				});
+				
+				objRecord.setSublistValue({
+					sublistId: 'item',
+					fieldId: 'item',
+					line: 0,
+					value: 123
+				});
+				
+				objRecord.setSublistValue({
+					sublistId: 'item',
+					fieldId: 'item',
+					line: 0,
+					value: 123
+				});
+				
+		} catch (e) {
+			log.error('Error in reduce : ', e);
+		}
+
+	}
+
+	/**
+	 * Executes when the summarize entry point is triggered and applies to the result set.
+	 *
+	 * @param {Summary} summary - Holds statistics regarding the execution of a map/reduce script
+	 * @since 2015.1
+	 */
+	function summarize(summary) {
+		try {
+
+		} catch (e) {
+			log.error('Error in summarize : ', e);
+		}
+
+	}
+
+	return {
+		getInputData : getInputData,
+		map : map,
+		reduce : reduce,
+		summarize : summarize
+	};
+
+});

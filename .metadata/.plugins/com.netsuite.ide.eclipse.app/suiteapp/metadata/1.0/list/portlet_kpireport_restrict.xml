@@ -1,0 +1,5 @@
+<list id="portlet_kpireport_restrict">
+  <value internal="F">All</value>
+  <value internal="G">My Team</value>
+  <value internal="T">Only Mine</value>
+</list>

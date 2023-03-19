@@ -1,0 +1,77 @@
+<list id="portlet_reportsnapshot_snapshot">
+  <value internal="SALES_MANAGEMENT_FORECAST">SALES_MANAGEMENT_FORECAST</value>
+  <value internal="SALES_MANAGEMENT_FORECASTASA" feature="ALTSALESAMOUNT">SALES_MANAGEMENT_FORECASTASA</value>
+  <value internal="SALES_MANAGEMENT_SALES">SALES_MANAGEMENT_SALES</value>
+  <value internal="QUICK_REPORT">QUICK_REPORT</value>
+  <value internal="SALES_MANAGEMENT_SALESORD_AGG">SALES_MANAGEMENT_SALESORD_AGG</value>
+  <value internal="FORECAST_BY_ITEM_SUMMARY">FORECAST_BY_ITEM_SUMMARY</value>
+  <value internal="SALES_FORECAST_SUM_SALESREP">SALES_FORECAST_SUM_SALESREP</value>
+  <value internal="SALES_MANAGEMENT_SALESORD">SALES_MANAGEMENT_SALESORD</value>
+  <value internal="COMPARATIVE_SALES">COMPARATIVE_SALES</value>
+  <value internal="COMPARATIVE_SALES_ORD">COMPARATIVE_SALES_ORD</value>
+  <value internal="COMPARATIVE_SALES_ORD_ASA">COMPARATIVE_SALES_ORD_ASA</value>
+  <value internal="FORECAST_STATUS">FORECAST_STATUS</value>
+  <value internal="FORECAST">FORECAST</value>
+  <value internal="FORECASTFORASA" feature="ALTSALESAMOUNT">FORECASTFORASA</value>
+  <value internal="SALES_BY_REP">SALES_BY_REP</value>
+  <value internal="SALES_ORD_BY_REP">SALES_ORD_BY_REP</value>
+  <value internal="SALES_ORD_BY_REP_AGG">SALES_ORD_BY_REP_AGG</value>
+  <value internal="SALES_ORD_ALT_BY_REP" feature="ALTSALESAMOUNT">SALES_ORD_ALT_BY_REP</value>
+  <value internal="CUSTJOB_ACTIVITY_SUMMARY">CUSTJOB_ACTIVITY_SUMMARY</value>
+  <value internal="PIPELINE">PIPELINE</value>
+  <value internal="PIPELINE_TOTAL">PIPELINE_TOTAL</value>
+  <value internal="PIPELINE_STATUS">PIPELINE_STATUS</value>
+  <value internal="PIPELINE_TOTAL_STATUS">PIPELINE_TOTAL_STATUS</value>
+  <value internal="PIPELINE_CUSTOMER">PIPELINE_CUSTOMER</value>
+  <value internal="PIPELINE_CUSTOMER_TOTAL">PIPELINE_CUSTOMER_TOTAL</value>
+  <value internal="SALES_BY_CUST">SALES_BY_CUST</value>
+  <value internal="SALES_ORD_BY_CUST">SALES_ORD_BY_CUST</value>
+  <value internal="SALES_ORD_BY_CUST_AGG">SALES_ORD_BY_CUST_AGG</value>
+  <value internal="SALES_ORD_BY_PROMO_CODE">SALES_ORD_BY_PROMO_CODE</value>
+  <value internal="FORECAST_BY_CUST">FORECAST_BY_CUST</value>
+  <value internal="FORECAST_OUT_BY_CUST">FORECAST_OUT_BY_CUST</value>
+  <value internal="PROFIT_SUM_BY_CUST">PROFIT_SUM_BY_CUST</value>
+  <value internal="AR_AGING_SUM">AR_AGING_SUM</value>
+  <value internal="OPEN_OPPORTUNITIES">OPEN_OPPORTUNITIES</value>
+  <value internal="OPEN_OPPORTUNITIESRANGE">OPEN_OPPORTUNITIESRANGE</value>
+  <value internal="OPEN_ESTIMATES">OPEN_ESTIMATES</value>
+  <value internal="OPEN_ESTIMATESRANGE">OPEN_ESTIMATESRANGE</value>
+  <value internal="OPEN_SALES_ORDERS">OPEN_SALES_ORDERS</value>
+  <value internal="OPEN_INVOICES">OPEN_INVOICES</value>
+  <value internal="PROSPECT_ANALYSIS_SUM">PROSPECT_ANALYSIS_SUM</value>
+  <value internal="ITEM_SALES_DOLLARS">ITEM_SALES_DOLLARS</value>
+  <value internal="ITEM_SALES_QUANTITY">ITEM_SALES_QUANTITY</value>
+  <value internal="ITEM_SALES_ORD">ITEM_SALES_ORD</value>
+  <value internal="ITEM_SALES_ORD_AGG">ITEM_SALES_ORD_AGG</value>
+  <value internal="INVENTORY_REV_SUMMARY">INVENTORY_REV_SUMMARY</value>
+  <value internal="SALES_SUMMARY_PARTNER">SALES_SUMMARY_PARTNER</value>
+  <value internal="SALES_ORD_BY_PARTNER">SALES_ORD_BY_PARTNER</value>
+  <value internal="CUSTOMER_BY_PARTNER_SUM">CUSTOMER_BY_PARTNER_SUM</value>
+  <value internal="PARTNER_ACTIVITY_SUMMARY">PARTNER_ACTIVITY_SUMMARY</value>
+  <value internal="CUSTOMER_BY_LEADSOURCE_SUM">CUSTOMER_BY_LEADSOURCE_SUM</value>
+  <value internal="CAMPAIGN_ACTIVITY">CAMPAIGN_ACTIVITY</value>
+  <value internal="CAMPAIGN_ANALYSIS">CAMPAIGN_ANALYSIS</value>
+  <value internal="CLOSE_CASE_SUM">CLOSE_CASE_SUM</value>
+  <value internal="OPEN_CASE_SUM">OPEN_CASE_SUM</value>
+  <value internal="ESCALATED_CASE">ESCALATED_CASE</value>
+  <value internal="WEBSITE_ITEM_HITS">WEBSITE_ITEM_HITS</value>
+  <value internal="WEBSITE_ITEM_HITS_VISITORS">WEBSITE_ITEM_HITS_VISITORS</value>
+  <value internal="WEBSITE_MEDIA_HITS">WEBSITE_MEDIA_HITS</value>
+  <value internal="WEBSITE_MEDIA_HITS_VISITORS">WEBSITE_MEDIA_HITS_VISITORS</value>
+  <value internal="WEBSITE_ITEM_HITS_ENTITY">WEBSITE_ITEM_HITS_ENTITY</value>
+  <value internal="WEBSITE_HOSTEDITEM_HITS_ENTITY">WEBSITE_HOSTEDITEM_HITS_ENTITY</value>
+  <value internal="WEBSTORE_ITEM_ORDERS">WEBSTORE_ITEM_ORDERS</value>
+  <value internal="WEBSTORE_ITEM_ORDERS_VISITORS">WEBSTORE_ITEM_ORDERS_VISITORS</value>
+  <value internal="WEBSITE_REFERRER_VISITORS">WEBSITE_REFERRER_VISITORS</value>
+  <value internal="WEBSITE_REFERRER_REVENUE">WEBSITE_REFERRER_REVENUE</value>
+  <value internal="WEBSITE_KEYWORDS_VISITORS">WEBSITE_KEYWORDS_VISITORS</value>
+  <value internal="WEBSITE_KEYWORDS_REVENUE">WEBSITE_KEYWORDS_REVENUE</value>
+  <value internal="WEBSITE_SITESEARCHHITS_SUMMARY">WEBSITE_SITESEARCHHITS_SUMMARY</value>
+  <value internal="UTIL_EMPLOYEE">UTIL_EMPLOYEE</value>
+  <value internal="EARNED_VALUE" feature="ADVANCEDJOBS">EARNED_VALUE</value>
+  <value internal="TIME_SUM_EMPLOYEE" feature="ADVANCEDJOBS">TIME_SUM_EMPLOYEE</value>
+  <value internal="TIME_SUM_JOB" feature="ADVANCEDJOBS">TIME_SUM_JOB</value>
+  <value internal="TIME_SUM_ITEM" feature="ADVANCEDJOBS">TIME_SUM_ITEM</value>
+  <value internal="ITEM_PURCHASE_DOLLARS">ITEM_PURCHASE_DOLLARS</value>
+  <value internal="ITEM_PURCHASE_QUANTITY">ITEM_PURCHASE_QUANTITY</value>
+</list>

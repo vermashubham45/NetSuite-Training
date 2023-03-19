@@ -1,0 +1,5 @@
+<list id="portlet_analytics_height">
+  <value internal="short">SHORT</value>
+  <value internal="medium">MEDIUM</value>
+  <value internal="tall">TALL</value>
+</list>

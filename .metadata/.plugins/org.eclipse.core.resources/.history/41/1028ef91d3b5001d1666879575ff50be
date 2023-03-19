@@ -1,0 +1,250 @@
+/**
+ * @NApiVersion 2.x
+ * @NScriptType ClientScript
+ * @NModuleScope SameAccount
+ */
+define(['N/record','N/runtime'],
+/**
+ * @param {record} record
+ */
+function(record,runtime) {
+    
+    /**
+     * Function to be executed after page is initialized.
+     *
+     * @param {Object} scriptContext
+     * @param {Record} scriptContext.currentRecord - Current form record
+     * @param {string} scriptContext.mode - The mode in which the record is being accessed (create, copy, or edit)
+     *
+     * @since 2015.2
+     */
+    function pageInit(scriptContext) {
+    	try{
+    	var currentRec= scriptContext.currentRecord;
+    	var userObj = runtime.getCurrentUser();
+    	currentRec.getField({fieldId:'custrecord_sv_fax'}).isDisabled=true;
+    	
+    	if(scriptContext.mode=='create'){
+    		currentRec.setValue({
+    			fieldId: 'name' ,
+    			value:userObj.name,
+    			ignoreFieldChange: true});
+    		
+    		
+    		currentRec.setValue({
+    			fieldId: 'custrecord_sv_role_name' ,
+    			value: userObj.role,
+    			ignoreFieldChange: true});
+    	      }
+    	else if(scriptContext.mode=='edit'){
+    	
+    	}
+    	
+    	
+    	}catch(e){
+    		alert("error occurred !")
+    	}
+
+    }
+
+    /**
+     * Function to be executed when field is changed.
+     *
+     * @param {Object} scriptContext
+     * @param {Record} scriptContext.currentRecord - Current form record
+     * @param {string} scriptContext.sublistId - Sublist name
+     * @param {string} scriptContext.fieldId - Field name
+     * @param {number} scriptContext.lineNum - Line number. Will be undefined if not a sublist or matrix field
+     * @param {number} scriptContext.columnNum - Line number. Will be undefined if not a matrix field
+     *
+     * @since 2015.2
+     */
+    function fieldChanged(scriptContext) {
+
+    	try{
+    		if(scriptContext.fieldId='custrecord_sv_email_id'){
+    			var Value=scriptContext.currentRecord.getValue({
+    				fieldId:'custrecord_sv_email_id'
+    			});
+    			
+    			if(Value){
+    				scriptContext.currentRecord.setValue({
+    				    fieldId: 'custrecord_sv_fax',
+    				    value: Value,
+    				    ignoreFieldChange: true
+    				    
+    				});
+    			}
+    		}
+    	}
+    	
+    	catch(e){
+    		alert("error in fieldchange function"+e)
+    	}
+    }
+
+    /**
+     * Function to be executed when field is slaved.
+     *
+     * @param {Object} scriptContext
+     * @param {Record} scriptContext.currentRecord - Current form record
+     * @param {string} scriptContext.sublistId - Sublist name
+     * @param {string} scriptContext.fieldId - Field name
+     *
+     * @since 2015.2
+     */
+    function postSourcing(scriptContext) {
+
+    }
+
+    /**
+     * Function to be executed after sublist is inserted, removed, or edited.
+     *
+     * @param {Object} scriptContext
+     * @param {Record} scriptContext.currentRecord - Current form record
+     * @param {string} scriptContext.sublistId - Sublist name
+     *
+     * @since 2015.2
+     */
+    function sublistChanged(scriptContext) {
+
+    }
+
+    /**
+     * Function to be executed after line is selected.
+     *
+     * @param {Object} scriptContext
+     * @param {Record} scriptContext.currentRecord - Current form record
+     * @param {string} scriptContext.sublistId - Sublist name
+     *
+     * @since 2015.2
+     */
+    function lineInit(scriptContext) {
+
+    }
+
+    /**
+     * Validation function to be executed when field is changed.
+     *
+     * @param {Object} scriptContext
+     * @param {Record} scriptContext.currentRecord - Current form record
+     * @param {string} scriptContext.sublistId - Sublist name
+     * @param {string} scriptContext.fieldId - Field name
+     * @param {number} scriptContext.lineNum - Line number. Will be undefined if not a sublist or matrix field
+     * @param {number} scriptContext.columnNum - Line number. Will be undefined if not a matrix field
+     *
+     * @returns {boolean} Return true if field is valid
+     *
+     * @since 2015.2
+     */
+    function validateField(scriptContext) {
+    	
+    try{
+    	
+    	var currentReco =scriptContext.currentRecord;
+    	if(currentReco.fieldId=='name'){
+    		var UserName=currentReco.getValue('name')
+    		alert('Username'+UserName)
+    		if(UserName){
+    			var regEx=/^[A-Za-z]+$/
+    					if(UserName.match(regEx)){
+    						alert('Correct name')
+    						return true;
+    					}
+    					else{
+    						alert('Use Only letters')
+    						return false;
+    					}
+    		}
+    		else{alert("error in t")}
+    	}
+    		
+    return true;	
+    }
+    catch(e){alert("Error"+e)}
+
+    }
+
+    /**
+     * Validation function to be executed when sublist line is committed.
+     *
+     * @param {Object} scriptContext
+     * @param {Record} scriptContext.currentRecord - Current form record
+     * @param {string} scriptContext.sublistId - Sublist name
+     *
+     * @returns {boolean} Return true if sublist line is valid
+     *
+     * @since 2015.2
+     */
+    function validateLine(scriptContext) {
+
+    }
+
+    /**
+     * Validation function to be executed when sublist line is inserted.
+     *
+     * @param {Object} scriptContext
+     * @param {Record} scriptContext.currentRecord - Current form record
+     * @param {string} scriptContext.sublistId - Sublist name
+     *
+     * @returns {boolean} Return true if sublist line is valid
+     *
+     * @since 2015.2
+     */
+    function validateInsert(scriptContext) {
+
+    }
+
+    /**
+     * Validation function to be executed when record is deleted.
+     *
+     * @param {Object} scriptContext
+     * @param {Record} scriptContext.currentRecord - Current form record
+     * @param {string} scriptContext.sublistId - Sublist name
+     *
+     * @returns {boolean} Return true if sublist line is valid
+     *
+     * @since 2015.2
+     */
+    function validateDelete(scriptContext) {
+
+    }
+
+    /**
+     * Validation function to be executed when record is saved.
+     *
+     * @param {Object} scriptContext
+     * @param {Record} scriptContext.currentRecord - Current form record
+     * @returns {boolean} Return true if record is valid
+     *
+     * @since 2015.2
+     */
+    function saveRecord(scriptContext) {
+    	var email=scriptContext.currentRecord.getValue({
+     	   fieldId:'custrecord_sv_email_id'
+        });
+        if(!email){
+     	   alert("Please enter email id");
+     	   return false;
+        }
+        else{
+     	   alert("save record");
+     	   return true;  
+        }
+
+    }
+
+    return {
+        pageInit: pageInit,
+        fieldChanged: fieldChanged,
+//        postSourcing: postSourcing,
+//        sublistChanged: sublistChanged,
+//        lineInit: lineInit,
+       validateField: validateField,
+//        validateLine: validateLine,
+//        validateInsert: validateInsert,
+//        validateDelete: validateDelete,
+       saveRecord: saveRecord
+    };
+    
+});

@@ -1,0 +1,4 @@
+<list id="portlet_kpireport_orientation">
+  <value internal="KPISONLEFT">KPIs on Left</value>
+  <value internal="DATERANGESONLEFT">Date Ranges on Left</value>
+</list>

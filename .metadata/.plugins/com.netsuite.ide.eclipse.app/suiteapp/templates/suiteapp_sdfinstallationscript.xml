@@ -1,0 +1,10 @@
+<sdfinstallationscript scriptid="customscript_">
+    <name></name>
+    <description></description>
+    <isinactive>F</isinactive>
+    <notifyadmins>F</notifyadmins>
+    <notifyemails></notifyemails>
+    <notifyowner>T</notifyowner>
+    <notifyuser>F</notifyuser>
+    <scriptfile>[]</scriptfile>
+</sdfinstallationscript>

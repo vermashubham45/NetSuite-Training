@@ -1,0 +1,4 @@
+com.netsuite.acceptDeprecation=true
+com.netsuite.initialize=done
+com.netsuite.version=2022.1.1
+eclipse.preferences.version=1

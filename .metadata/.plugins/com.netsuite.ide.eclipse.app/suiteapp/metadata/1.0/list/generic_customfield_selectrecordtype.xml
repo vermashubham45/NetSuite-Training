@@ -1,0 +1,441 @@
+<list id="generic_customfield_selectrecordtype">
+  <value>-2</value>
+  <value feature="ACCOUNTING">-3</value>
+  <value>-4</value>
+  <value feature="CRM">-5</value>
+  <value>-6</value>
+  <value feature="JOBS">-7</value>
+  <value>-8</value>
+  <value>-9</value>
+  <value>-10</value>
+  <value feature="CRM">-20</value>
+  <value feature="CRM">-21</value>
+  <value feature="CRM">-22</value>
+  <value feature="SUPPORT">-23</value>
+  <value feature="MARKETING">-24</value>
+  <value feature="KNOWLEDGEBASE">-25</value>
+  <value feature="ISSUEDB">-26</value>
+  <value feature="ADVANCEDJOBS">-27</value>
+  <value feature="RESOURCEALLOCATIONS">-28</value>
+  <value>-30</value>
+  <value>-31</value>
+  <value feature="MFGROUTING">-35</value>
+  <value feature="MFGROUTING">-36</value>
+  <value feature="PAYROLL">-37</value>
+  <value feature="PAYROLL">-38</value>
+  <value feature="PAYROLL">-39</value>
+  <value feature="PAYROLL">-40</value>
+  <value feature="EFFECTIVEDATING">-41</value>
+  <value>-100</value>
+  <value feature="CLASSES">-101</value>
+  <value feature="DEPARTMENTS">-102</value>
+  <value feature="LOCATIONS">-103</value>
+  <value feature="SFA">-104</value>
+  <value feature="ACCOUNTINGPERIODS">-105</value>
+  <value>-106</value>
+  <value feature="SFA">-108</value>
+  <value>-109</value>
+  <value feature="ACCOUNTING">-110</value>
+  <value>-111</value>
+  <value feature="ACCOUNTING">-112</value>
+  <value feature="ISSUEDB">-113</value>
+  <value feature="ISSUEDB">-114</value>
+  <value feature="ISSUEDB">-115</value>
+  <value feature="ISSUEDB">-116</value>
+  <value feature="SUBSIDIARIES">-117</value>
+  <value>-118</value>
+  <value>-119</value>
+  <value>-120</value>
+  <value feature="PROMOCODES">-121</value>
+  <value feature="MULTICURRENCY">-122</value>
+  <value>-123</value>
+  <value>-124</value>
+  <value>-125</value>
+  <value>-126</value>
+  <value feature="ADVTAXENGINE">-127</value>
+  <value feature="ACCOUNTING">-128</value>
+  <value feature="WORKFLOW">-129</value>
+  <value feature="MARKETING">-131</value>
+  <value feature="SUPPORT">-132</value>
+  <value feature="ISSUEDB">-133</value>
+  <value feature="SFA">-134</value>
+  <value feature="SFA">-135</value>
+  <value feature="SFA">-136</value>
+  <value>-137</value>
+  <value feature="EXPENSEALLOCATION">-138</value>
+  <value feature="BILLINGCLASSES">-139</value>
+  <value feature="ADVBILLING">-140</value>
+  <value feature="ADVBILLING">-141</value>
+  <value feature="MARKETING">-142</value>
+  <value feature="MARKETING">-143</value>
+  <value feature="MARKETING">-144</value>
+  <value feature="MARKETING">-145</value>
+  <value feature="MARKETING">-146</value>
+  <value>-147</value>
+  <value feature="MARKETING">-148</value>
+  <value feature="MARKETING">-149</value>
+  <value feature="MARKETING">-150</value>
+  <value feature="SUPPORT">-151</value>
+  <value feature="SUPPORT">-152</value>
+  <value feature="SUPPORT">-153</value>
+  <value feature="SUPPORT">-154</value>
+  <value>-155</value>
+  <value>-156</value>
+  <value feature="CRM">-157</value>
+  <value feature="CRM">-158</value>
+  <value>-159</value>
+  <value>-160</value>
+  <value>-161</value>
+  <value feature="SFA">-162</value>
+  <value feature="SUPPORT">-163</value>
+  <value feature="ACCOUNTING">-164</value>
+  <value>-165</value>
+  <value>-166</value>
+  <value>-167</value>
+  <value>-168</value>
+  <value>-169</value>
+  <value>-170</value>
+  <value>-171</value>
+  <value feature="PAYROLL">-172</value>
+  <value feature="ISSUEDB">-173</value>
+  <value feature="ISSUEDB">-174</value>
+  <value feature="ISSUEDB">-175</value>
+  <value feature="ISSUEDB">-176</value>
+  <value feature="JOBS">-177</value>
+  <value>-178</value>
+  <value>-179</value>
+  <value>-180</value>
+  <value>-181</value>
+  <value feature="CRM">-182</value>
+  <value>-183</value>
+  <value feature="INVENTORY">-184</value>
+  <value feature="WEBSITE">-185</value>
+  <value feature="MULTPRICE">-186</value>
+  <value feature="QUANTITYPRICING">-187</value>
+  <value>-188</value>
+  <value feature="REVENUERECOGNITION">-189</value>
+  <value feature="ADVFORECASTING">-190</value>
+  <value feature="TEAMSELLING">-191</value>
+  <value feature="ACCOUNTING">-192</value>
+  <value feature="ACCOUNTING">-193</value>
+  <value feature="WEBSITE">-194</value>
+  <value>-195</value>
+  <value>-196</value>
+  <value feature="MARKETING">-197</value>
+  <value>-198</value>
+  <value>-199</value>
+  <value feature="GCO">-200</value>
+  <value feature="UNITSOFMEASURE">-201</value>
+  <value>-202</value>
+  <value feature="SFA">-203</value>
+  <value feature="SOFTDESCRIPTORS">-204</value>
+  <value feature="QUANTITYPRICING">-205</value>
+  <value feature="QUANTITYPRICING">-206</value>
+  <value feature="GROSSPROFIT">-207</value>
+  <value feature="REVRECVSOE">-208</value>
+  <value feature="REVRECVSOE">-209</value>
+  <value feature="ADVANCEDSITECUST">-210</value>
+  <value feature="ADVANCEDJOBS">-211</value>
+  <value feature="COMMISSIONS">-212</value>
+  <value>-213</value>
+  <value>-214</value>
+  <value>-215</value>
+  <value feature="REVENUERECOGNITION">-216</value>
+  <value feature="REVENUERECOGNITION">-217</value>
+  <value>-218</value>
+  <value>-219</value>
+  <value>-220</value>
+  <value feature="UNITSOFMEASURE">-221</value>
+  <value>-222</value>
+  <value>-223</value>
+  <value feature="MULTILANGUAGE">-224</value>
+  <value feature="ADVTAXENGINE">-225</value>
+  <value feature="MARKETING">-226</value>
+  <value feature="MARKETING">-227</value>
+  <value feature="ACCOUNTING">-228</value>
+  <value feature="MARKETING">-229</value>
+  <value>-230</value>
+  <value feature="REVENUERECOGNITION">-231</value>
+  <value feature="AMORTIZATION">-232</value>
+  <value feature="PROMOCODES">-233</value>
+  <value feature="ADVBILLING">-234</value>
+  <value feature="WORKFLOW">-235</value>
+  <value feature="WORKFLOW">-236</value>
+  <value feature="MULTICURRENCY">-237</value>
+  <value>-238</value>
+  <value feature="ADVTAXENGINE">-239</value>
+  <value feature="SUBSIDIARIES">-240</value>
+  <value feature="SUBSIDIARIES">-241</value>
+  <value feature="BINMANAGEMENT">-242</value>
+  <value>-243</value>
+  <value feature="ACCOUNTING">-244</value>
+  <value feature="ACCOUNTING">-245</value>
+  <value>-246</value>
+  <value feature="ITEMDEMANDPLANNING">-247</value>
+  <value feature="STANDARDCOSTING">-248</value>
+  <value feature="STANDARDCOSTING">-249</value>
+  <value feature="COACLASSIFICATIONMANAGEMENT">-250</value>
+  <value feature="COACLASSIFICATIONMANAGEMENT">-251</value>
+  <value feature="MULTIBOOKV2">-252</value>
+  <value feature="MULTIBOOK">-253</value>
+  <value feature="TIMETRACKING">-256</value>
+  <value feature="MULTIBOOKV2">-257</value>
+  <value feature="MULTIBOOKV2">-258</value>
+  <value feature="MULTIBOOKV2">-259</value>
+  <value feature="SUBSIDIARIES">-261</value>
+  <value feature="MULTIPLECALENDARS">-262</value>
+  <value feature="REVRECVSOE">-263</value>
+  <value feature="ACCOUNTINGPERIODS">-264</value>
+  <value feature="PAYROLL">-265</value>
+  <value feature="NUMBEREDINVENTORY">-266</value>
+  <value feature="MULTISITE">-268</value>
+  <value>-269</value>
+  <value feature="COMMISSIONS">-270</value>
+  <value feature="COMMISSIONS">-271</value>
+  <value feature="CHARGEBASEDBILLING">-276</value>
+  <value feature="RESOURCEALLOCATIONS">-278</value>
+  <value>-280</value>
+  <value>-281</value>
+  <value>-282</value>
+  <value feature="CHARGEBASEDBILLING">-283</value>
+  <value feature="CHARGEBASEDBILLING">-284</value>
+  <value feature="CHARGEBASEDBILLING">-285</value>
+  <value feature="CHARGEBASEDBILLING">-286</value>
+  <value feature="JOBCOSTING">-287</value>
+  <value feature="MFGROUTING">-288</value>
+  <value feature="ADDRESSCUSTOMIZATION">-289</value>
+  <value feature="CHARGEBASEDBILLING">-290</value>
+  <value>-292</value>
+  <value feature="CHARGEBASEDBILLING">-293</value>
+  <value feature="MFGROUTING">-294</value>
+  <value feature="TIMESHEETS">-295</value>
+  <value feature="CHARGEBASEDBILLING">-296</value>
+  <value feature="TIMESHEETS">-297</value>
+  <value feature="STANDARDCOSTING">-298</value>
+  <value feature="RESOURCEALLOCATIONS">-301</value>
+  <value feature="GLAUDITNUMBERING">-302</value>
+  <value feature="PAYROLL">-304</value>
+  <value feature="SHIPPINGPARTNERS">-309</value>
+  <value feature="ADVANCEDJOBS">-310</value>
+  <value feature="PAYROLL">-311</value>
+  <value feature="ADVANCEDREVENUERECOGNITION">-314</value>
+  <value feature="ADVREVRECORADVEXPMGMT">-315</value>
+  <value feature="SHIPPINGPARTNERS">-316</value>
+  <value feature="SHIPPINGPARTNERS">-317</value>
+  <value>-319</value>
+  <value feature="SUPPORT">-320</value>
+  <value feature="ADVANCEDJOBS">-321</value>
+  <value>-322</value>
+  <value feature="PURCHASEORDERS">-324</value>
+  <value feature="DISTRIBUTIONRESOURCEPLANNING">-325</value>
+  <value feature="DISTRIBUTIONRESOURCEPLANNING">-326</value>
+  <value feature="DISTRIBUTIONRESOURCEPLANNING">-327</value>
+  <value feature="SUBSCRIPTIONBILLING">-330</value>
+  <value feature="ADVANCEDREVENUERECOGNITION">-331</value>
+  <value feature="ADVANCEDREVENUERECOGNITION">-332</value>
+  <value feature="BILLINGACCOUNTS">-333</value>
+  <value feature="ADVANCEDREVENUERECOGNITION">-335</value>
+  <value feature="ADVANCEDREVENUERECOGNITION">-336</value>
+  <value feature="SUBSCRIPTIONBILLING">-337</value>
+  <value feature="SUBSCRIPTIONBILLING">-338</value>
+  <value feature="ADVANCEDREVENUERECOGNITION">-340</value>
+  <value feature="SUBSCRIPTIONBILLING">-341</value>
+  <value feature="SUBSCRIPTIONBILLING">-342</value>
+  <value feature="ADVREVRECORADVEXPMGMT">-343</value>
+  <value feature="SUBSCRIPTIONBILLING">-344</value>
+  <value feature="TERMINATIONREASONTRACKING">-345</value>
+  <value feature="CUSTOMTRANSACTIONS">-346</value>
+  <value feature="ADVANCEDREVENUERECOGNITION">-347</value>
+  <value feature="ADVANCEDREVENUERECOGNITION">-348</value>
+  <value feature="ADVANCEDREVENUERECOGNITION">-349</value>
+  <value feature="POSITIONMANAGEMENT">-350</value>
+  <value feature="AUTOLOCATIONASSIGNMENT">-353</value>
+  <value feature="JOBMANAGEMENT">-355</value>
+  <value feature="ADVANCEDGVMNTISSUEDIDTRACKING">-356</value>
+  <value feature="ADVANCEDREVENUERECOGNITION">-357</value>
+  <value feature="SUBSCRIPTIONBILLING">-359</value>
+  <value feature="SUBSCRIPTIONBILLING">-360</value>
+  <value feature="SUBSCRIPTIONBILLING">-361</value>
+  <value feature="SUBSCRIPTIONBILLING">-362</value>
+  <value feature="SUBSCRIPTIONBILLING">-364</value>
+  <value feature="ADVANCEDREVENUERECOGNITION">-365</value>
+  <value feature="KUDOS">-366</value>
+  <value feature="KUDOS">-367</value>
+  <value feature="ADVANCEDGVMNTISSUEDIDTRACKING">-368</value>
+  <value feature="GROUPAVERAGECOSTING">-369</value>
+  <value feature="LOCATIONS">-371</value>
+  <value feature="ADVANCEDGVMNTISSUEDIDTRACKING">-372</value>
+  <value feature="ADVANCEDGVMNTISSUEDIDTRACKING">-373</value>
+  <value>-374</value>
+  <value>-375</value>
+  <value feature="TIMEOFFMANAGEMENT">-376</value>
+  <value feature="TIMEOFFMANAGEMENT">-377</value>
+  <value feature="COMMERCECATEGORIES">-378</value>
+  <value feature="COMMERCECATEGORIES">-379</value>
+  <value feature="JOBMANAGEMENT">-380</value>
+  <value feature="AUTOLOCATIONASSIGNMENT">-381</value>
+  <value feature="TIMEOFFMANAGEMENT">-382</value>
+  <value feature="TIMEOFFMANAGEMENT">-383</value>
+  <value feature="AUTOLOCATIONASSIGNMENT">-385</value>
+  <value feature="TIMEOFFMANAGEMENT">-386</value>
+  <value feature="ADVANCEDPRINTING">-387</value>
+  <value feature="JOBREQUISITION">-388</value>
+  <value feature="TIMEOFFMANAGEMENT">-391</value>
+  <value feature="TIMEOFFMANAGEMENT">-392</value>
+  <value feature="SUBSCRIPTIONBILLING">-395</value>
+  <value feature="MULTIPLEBUDGETS">-396</value>
+  <value feature="ADVTAXENGINE">-400</value>
+  <value feature="TIMEOFFMANAGEMENT">-402</value>
+  <value feature="JOBREQUISITION">-403</value>
+  <value feature="JOBREQUISITION">-404</value>
+  <value feature="TIMEOFFMANAGEMENT">-405</value>
+  <value feature="TIMEOFFMANAGEMENT">-406</value>
+  <value feature="TIMEOFFMANAGEMENT">-407</value>
+  <value>-408</value>
+  <value>-409</value>
+  <value feature="CHARGEBASEDBILLINGANDADVREVREC">-410</value>
+  <value feature="CHARGEBASEDBILLINGANDADVREVREC">-411</value>
+  <value feature="BILLINGRATECARDS">-412</value>
+  <value feature="TIMEOFFMANAGEMENT">-413</value>
+  <value feature="ACCOUNTING">-414</value>
+  <value>-417</value>
+  <value>-418</value>
+  <value feature="CHARGEBASEDBILLINGANDADVREVREC">-419</value>
+  <value feature="ACCOUNTING">-420</value>
+  <value feature="ADVANCEDBILLOFMATERIALS">-422</value>
+  <value feature="ADVANCEDBILLOFMATERIALS">-423</value>
+  <value feature="WORKORDERS">-425</value>
+  <value feature="ADVANCEDSITEMANAGEMENT">-426</value>
+  <value feature="INBOUNDSHIPMENT">-427</value>
+  <value feature="ADVANCEDSITEMANAGEMENT">-428</value>
+  <value feature="ADVANCEDSITEMANAGEMENT">-430</value>
+  <value feature="ADVANCEDSITEMANAGEMENT">-431</value>
+  <value feature="ADVANCEDSITEMANAGEMENT">-432</value>
+  <value>-434</value>
+  <value>-435</value>
+  <value>-436</value>
+  <value feature="ADVANCEDSITEMANAGEMENT">-437</value>
+  <value>-438</value>
+  <value feature="FULFILLMENTREQUEST">-440</value>
+  <value feature="FULFILLMENTREQUEST">-441</value>
+  <value feature="MERCHANDISEHIERARCHY">-450</value>
+  <value feature="MERCHANDISEHIERARCHY">-451</value>
+  <value feature="MERCHANDISEHIERARCHY">-452</value>
+  <value feature="INVENTORY">-460</value>
+  <value feature="INVENTORY">-461</value>
+  <value feature="EFFECTIVEDATING">-494</value>
+  <value feature="EMPLOYEECHANGEREQUESTS">-495</value>
+  <value feature="EMPLOYEECHANGEREQUESTS">-496</value>
+  <value feature="EMPLOYEECHANGEREQUESTS">-497</value>
+  <value>-500</value>
+  <value feature="INVENTORYSTATUS">-505</value>
+  <value feature="MULTILOCINVT">-506</value>
+  <value feature="SUBSCRIPTIONBILLING">-507</value>
+  <value feature="SUBSCRIPTIONBILLING">-508</value>
+  <value feature="GAINLOSSACCTMAPPING">-514</value>
+  <value feature="ADVANCEDJOBS">-517</value>
+  <value>-520</value>
+  <value feature="SUPPLYCHAINCONTROLTOWER">-522</value>
+  <value feature="TERMINATIONREASONTRACKING">-523</value>
+  <value feature="TERMINATIONREASONTRACKING">-524</value>
+  <value>-528</value>
+  <value>-530</value>
+  <value>-531</value>
+  <value>-532</value>
+  <value feature="ADVANCEDJOBS">-533</value>
+  <value feature="CCTRACKING">-535</value>
+  <value feature="CCTRACKING">-537</value>
+  <value feature="CCTRACKING">-538</value>
+  <value feature="CCTRACKING">-539</value>
+  <value feature="CCTRACKING">-540</value>
+  <value feature="GLAUDITNUMBERING">-543</value>
+  <value feature="CUSTOMGLLINES">-544</value>
+  <value feature="MULTISUBSIDIARYCUSTOMER">-546</value>
+  <value feature="SUPPLYALLOCATION">-547</value>
+  <value>-548</value>
+  <value feature="SUBSIDIARIES">-549</value>
+  <value feature="CROSSSUBSIDIARYFULFILLMENT">-550</value>
+  <value feature="SUBSIDIARIES">-551</value>
+  <value>-553</value>
+  <value>-554</value>
+  <value>-555</value>
+  <value>-556</value>
+  <value feature="PAYROLL">-560</value>
+  <value>-561</value>
+  <value feature="INVOICEGROUP">-565</value>
+  <value>-696</value>
+  <value>-710</value>
+  <value>-711</value>
+  <value>-712</value>
+  <value>-714</value>
+  <value>-715</value>
+  <value>-716</value>
+  <value>-717</value>
+  <value>-718</value>
+  <value>-719</value>
+  <value>-720</value>
+  <value>-728</value>
+  <value feature="INTERCOMPANYFRAMEWORK">-856</value>
+  <value feature="SUITECOMMERCEENTERPRISE">-861</value>
+  <value feature="SUITECOMMERCEENTERPRISE">-862</value>
+  <value>-863</value>
+  <value>-864</value>
+  <value>-865</value>
+  <value>-867</value>
+  <value feature="COMMERCESEARCHBOOSTING">-868</value>
+  <value feature="COMMERCESEARCHBOOSTING">-869</value>
+  <value>-896</value>
+  <value>-897</value>
+  <value>-898</value>
+  <value>-899</value>
+  <value feature="WBS">-900</value>
+  <value feature="SUPPLYCHAINCONTROLTOWER">-901</value>
+  <value feature="EXPREPORTS">-902</value>
+  <value>-904</value>
+  <value feature="WEEKLYTIMESHEETS">-905</value>
+  <value feature="INTERCOMPANYFRAMEWORK">-906</value>
+  <value feature="WBS">-907</value>
+  <value feature="VARIABLE_PAY_TBRBCT">-908</value>
+  <value>-910</value>
+  <value>-911</value>
+  <value feature="EXPREPORTS">-913</value>
+  <value feature="EXPREPORTS">-914</value>
+  <value feature="ADVANCEDEMPLOYEEPERMISSIONS">-970</value>
+  <value>-997</value>
+  <value>-998</value>
+  <value>-999</value>
+  <value>-1403</value>
+  <value>-1404</value>
+  <value>-1501</value>
+  <value feature="RULEBASEDRECOGNITIONTREATMENT">-1502</value>
+  <value feature="RULEBASEDRECOGNITIONTREATMENT">-1503</value>
+  <value>-1504</value>
+  <value feature="FXRATETYPE">-1553</value>
+  <value>-4006</value>
+  <value>-4007</value>
+  <value>-4009</value>
+  <value feature="COMMERCESEARCHANALYTICS">-4010</value>
+  <value feature="INVOICEGROUP">-4011</value>
+  <value feature="ADVANCEDNUMBERINGSEQUENCES">-4012</value>
+  <value>-4016</value>
+  <value feature="VARIABLE_PAY_TBRBCT">-4021</value>
+  <value>-4023</value>
+  <value>-4024</value>
+  <value>-4025</value>
+  <value feature="CCTRACKING">-4027</value>
+  <value feature="ADVANCEDNUMBERINGSEQUENCES">-4028</value>
+  <value feature="CCTRACKING">-4032</value>
+  <value feature="CCTRACKING">-4033</value>
+  <value>-4034</value>
+  <value>-4035</value>
+  <value>-4036</value>
+  <value>-4104</value>
+  <value>-4105</value>
+  <value>-4106</value>
+  <value>-4108</value>
+  <value>-4109</value>
+  <value>-4110</value>
+  <value feature="ADVANCEDNUMBERINGSEQUENCES">-4114</value>
+  <value>-4115</value>
+  <value feature="SFA">-4117</value>
+</list>

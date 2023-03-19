@@ -1,0 +1,219 @@
+/**
+ * @NApiVersion 2.x
+ * @NScriptType MapReduceScript
+ * @NModuleScope SameAccount
+ */
+define(['N/search', 'N/file', 'N/record'],
+
+function(search, file, record) {
+   
+    /**
+     * Marks the beginning of the Map/Reduce process and generates input data.
+     *
+     * @typedef {Object} ObjectRef
+     * @property {number} id - Internal ID of the record instance
+     * @property {string} type - Record type id
+     *
+     * @return {Array|Object|Search|RecordRef} inputSummary
+     * @since 2015.1
+     */
+    function getInputData() {
+    	try{
+    		var folderSearchObj = search.create({
+    			   type: "folder",
+    			   filters:
+    			   [
+    			      ["internalid","anyof","13603"]
+    			   ],
+    			   columns:
+    			   [
+    			      search.createColumn({
+    			         name: "internalid",
+    			         join: "file",
+    			         label: "File Id"
+    			      })
+    			   ]
+    			});
+      		var searchResultCount = folderSearchObj.runPaged().count;
+      		log.debug("folderSearchObj result count",searchResultCount);
+
+      		var fileId;
+      		folderSearchObj.run().each(function(result){
+      		   fileId = result.getValue({name: "internalid",join: "file",label: "File Id"});
+      		   log.debug('fileId', fileId);
+
+      		   return true;
+      		});
+
+      		var fileObj = {'fileId' : fileId};
+      		log.debug('End of getInputData Stage');
+      		return fileObj;
+
+    	}catch(e){
+    		log.error('Error in getInputData Stage', e);
+    	}
+    }
+
+    /**
+     * Executes when the map entry point is triggered and applies to each key/value pair.
+     *
+     * @param {MapSummary} context - Data collection containing the key/value pairs to process through the map stage
+     * @since 2015.1
+     */
+    function map(context) {
+    	try{
+    		log.debug('In Map Stage', 'In Map Stage');
+    		
+    		var m_fileId = JSON.parse(context.value);
+    		log.debug('m_fileId', m_fileId);
+    		
+
+    		var m_fileObj = file.load({
+    			id : m_fileId
+    		});
+    		var fileContent;
+    		if(m_fileObj.size < 10485760){
+    			fileContent = m_fileObj.getContents();
+    		}
+    		log.debug('fileContent', fileContent);
+    		
+    		var fileContentSplit = fileContent.split("\r\n");
+    		log.debug('fileContentSplit', fileContentSplit);
+    		
+    		var fileHeaders = fileContentSplit[0].split(',');
+    		log.debug('fileHeaders', fileHeaders);
+    		var fileValues = fileContentSplit.splice(1, fileContentSplit.length - 2);
+    		log.debug('fileValues', fileValues);
+    
+    		for(var id = 0; id < fileValues.length; id++) {
+    			var fileKey;
+    			var fileObject = {};
+    			var fileRecord = fileValues[id].split(',');
+    			log.debug('fileRecord', fileRecord);
+    			for(var val = 0; val < fileRecord.length; val++) {
+    				fileKey = fileRecord[0];
+    				fileObject[fileHeaders[val]] = fileRecord[val];
+    			}
+    			log.debug('fileKey', fileKey);
+    			log.debug('fileObject', fileObject);
+    			context.write({
+    				key : fileKey,
+    				value : fileObject
+    			});
+    		}
+    		
+    		
+    	}catch(e){
+    		log.error('Error in Map Stage', e);
+    	}
+    }
+
+    /**
+     * Executes when the reduce entry point is triggered and applies to each group.
+     *
+     * @param {ReduceSummary} context - Data collection containing the groups to process through the reduce stage
+     * @since 2015.1
+     */
+    function reduce(context) {
+    	try{
+    		log.debug('In Reduce Stage', 'In Reduce Stage');
+    		
+    		var fileRecords = context.values;
+    		log.debug('fileRecords', fileRecords);
+    		var currentData;
+    		for(var data = 0; data < fileRecords.length; data++) {
+    			currentData = JSON.parse(fileRecords[data]);
+    			log.debug('currentData', currentData);
+    			
+    			var invRecord = record.create({
+    				type : record.Type.INVOICE
+    			});
+    			
+    			invRecord.setValue({
+    				fieldId : 'entity',
+    				value : currentData.Customer
+    			});
+    			log.debug('Customer selected');
+    			
+    			invRecord.setSublistValue({
+    			    sublistId: 'item',
+    			    fieldId: 'item',
+    			    line: 0,
+    			    value: currentData.Item
+    			});
+    			log.debug('Item selected');
+    			
+    			invRecord.setSublistValue({
+    			    sublistId: 'item',
+    			    fieldId: 'quantity',
+    			    line: 0,
+    			    value: currentData.Quantity
+    			});
+    			log.debug('Quantity described');
+    			
+    			invRecord.setSublistValue({
+    			    sublistId: 'item',
+    			    fieldId: 'rate',
+    			    line: 0,
+    			    value: currentData.Rate
+    			});
+    			log.debug('Rate described');
+    			
+    			invRecord.setSublistValue({
+    			    sublistId: 'item',
+    			    fieldId: 'amount',
+    			    line: 0,
+    			    value: currentData.Amount
+    			});
+    			log.debug('Amount calculated');
+    			
+    			invRecord.setSublistValue({
+    			    sublistId: 'item',
+    			    fieldId: 'location',
+    			    line: 0,
+    			    value: currentData.Location
+    			});
+    			log.debug('Location filled');
+    			
+    			invRecord.setSublistValue({
+    			    sublistId: 'item',
+    			    fieldId: 'taxcode',
+    			    line: 0,
+    			    value: currentData['Tax Code']
+    			});
+    			log.debug('Tax code selected');
+
+    			log.debug('Line Commited/Added');
+
+    			var invoiceId = invRecord.save();
+    			log.debug('Invoice created and Id is', invoiceId);
+
+    		}
+    	}catch(e){
+    		log.error('Error in Reduce Stage', e);
+    	}
+    }
+
+
+    /**
+     * Executes when the summarize entry point is triggered and applies to the result set.
+     *
+     * @param {Summary} summary - Holds statistics regarding the execution of a map/reduce script
+     * @since 2015.1
+     */
+    function summarize(summary) {
+    	try{
+
+    	}catch(e){
+    		log.error('Error in Summarize Stage', e);
+    	}
+    }
+
+    return {
+        getInputData: getInputData,
+        map: map,
+        reduce: reduce,
+        summarize: summarize
+    };
+
+});

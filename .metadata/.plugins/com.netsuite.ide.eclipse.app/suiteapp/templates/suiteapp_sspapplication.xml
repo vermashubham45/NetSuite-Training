@@ -1,0 +1,9 @@
+<sspapplication scriptid="webapp_">
+  <appfolder>[]</appfolder>
+  <description></description>
+  <isinactive>F</isinactive>
+  <loglevel>DEBUG</loglevel>
+  <name></name>
+  <rootpath></rootpath>
+  <status>TESTING</status>
+</sspapplication>

@@ -1,0 +1,34 @@
+<list id="kpi_snapshots_internal">
+  <value>ACCTUPTIME</value>
+  <value>AGGREGATEDBOOKINGS</value>
+  <value>BOOKINGS</value>
+  <value feature="WEBSTORE">CARTABANDON</value>
+  <value feature="WEBSTORE">CHECKOUTABANDON</value>
+  <value>CURRENTLOGGEDINUSERS</value>
+  <value>CUSTOMERSWON</value>
+  <value feature="BUSINESS">EMPLOYEES</value>
+  <value>ETECASEEOVERFIVE</value>
+  <value>ETECASEEOVERTWO</value>
+  <value>ETECASEVOVERFIVE</value>
+  <value>ETECASEVOVERTWO</value>
+  <value>ETECUSTEOVERFIVE</value>
+  <value>ETECUSTEOVERTWO</value>
+  <value>ETECUSTVOVERFIVE</value>
+  <value>ETECUSTVOVERTWO</value>
+  <value>ETESOEOVERFIVE</value>
+  <value>ETESOEOVERTWO</value>
+  <value>ETESOVOVERFIVE</value>
+  <value>ETESOVOVERTWO</value>
+  <value feature="BUSINESS">NEWBUSINESS</value>
+  <value>NEWBUSINESSORD</value>
+  <value feature="BUSINESS">NEWCUSTOMERS</value>
+  <value>NEWCUSTOMERSORD</value>
+  <value>ORDERS</value>
+  <value>PAGETIMESOVERFIVE</value>
+  <value>PAGETIMESOVERTWO</value>
+  <value>RPAGETIMESOVERFIVE</value>
+  <value>RPAGETIMESOVERTWO</value>
+  <value>SPAGETIMESOVERFIVE</value>
+  <value>SPAGETIMESOVERTWO</value>
+  <value>VENDORBALANCE</value>
+</list>

@@ -1,0 +1,18 @@
+<customrecordactionscript scriptid="customscript_">
+    <description></description>
+    <isinactive>F</isinactive>
+    <name></name>
+    <notifyadmins>F</notifyadmins>
+    <notifyemails></notifyemails>
+    <notifyowner>T</notifyowner>
+    <notifyuser>F</notifyuser>
+    <scriptfile>[]</scriptfile>
+    <scriptdeployments>
+        <scriptdeployment scriptid="customdeploy_">
+            <isdeployed>T</isdeployed>
+            <loglevel>DEBUG</loglevel>
+            <recordtype></recordtype>
+            <status>TESTING</status>
+        </scriptdeployment>
+    </scriptdeployments>
+</customrecordactionscript>

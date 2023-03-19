@@ -1,0 +1,7 @@
+<list id="portlet_reportsnapshot_charttheme">
+  <value internal="enhsnapshots_global_theme">GLOBAL_THEME</value>
+  <value internal="enhsnapshots_basic">BASIC</value>
+  <value internal="enhsnapshots_colorful">COLORFUL</value>
+  <value internal="enhsnapshots_match_color_theme_light">MATCH_COLOR_THEME_LIGHT</value>
+  <value internal="enhsnapshots_match_color_theme_bold">MATCH_COLOR_THEME_BOLD</value>
+</list>

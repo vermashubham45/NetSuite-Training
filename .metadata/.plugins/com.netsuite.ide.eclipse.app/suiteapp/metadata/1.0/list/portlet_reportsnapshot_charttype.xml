@@ -1,0 +1,6 @@
+<list id="portlet_reportsnapshot_charttype">
+  <value internal="enhsnapshots_comp_area">AREA</value>
+  <value internal="enhsnapshots_comp_line">LINE</value>
+  <value internal="enhsnapshots_comp_bar">BAR</value>
+  <value internal="enhsnapshots_comp_column">COLUMN</value>
+</list>

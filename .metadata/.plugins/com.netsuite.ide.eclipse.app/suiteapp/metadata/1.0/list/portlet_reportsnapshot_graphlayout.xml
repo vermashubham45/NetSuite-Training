@@ -1,0 +1,6 @@
+<list id="portlet_reportsnapshot_graphlayout">
+  <value internal="LINE">LINE</value>
+  <value internal="BAR_HORIZONTAL">BAR</value>
+  <value internal="BAR_VERTICAL">COLUMN</value>
+  <value internal="PIE">PIE</value>
+</list>

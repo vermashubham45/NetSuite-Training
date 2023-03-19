@@ -1,0 +1,6 @@
+<list id="portlet_reportsnapshot_backgroundtype">
+  <value internal="enhsnapshots_global_background">GLOBAL_BACKGROUND</value>
+  <value internal="enhsnapshots_lines">LINES</value>
+  <value internal="enhsnapshots_bands">BANDS</value>
+  <value internal="enhsnapshots_grid">GRID</value>
+</list>

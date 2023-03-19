@@ -1,0 +1,162 @@
+<list id="transactionform_columnid">
+  <value>ACCOUNT</value>
+  <value feature="SUPPLYALLOCATION">ALLOCATIONALERT</value>
+  <value feature="ALTSALESAMOUNT">ALTSALESAMT</value>
+  <value>AMOUNT</value>
+  <value feature="SALESORDERS">AMOUNTORDERED</value>
+  <value feature="REVENUERECOGNITION">AMOUNTRECOGNIZED</value>
+  <value>AMOUNTREMAINING</value>
+  <value feature="OUTSOURCEDMFG">ASSEMBLY</value>
+  <value>ASSEMBLYUNITS</value>
+  <value>AVERAGECOST</value>
+  <value feature="BILLSCOSTS">BILLEDDATE</value>
+  <value feature="ADVBILLING">BILLINGSCHEDULE</value>
+  <value feature="OUTSOURCEDMFG">BILLOFMATERIALS</value>
+  <value feature="OUTSOURCEDMFG">BILLOFMATERIALSREVISION</value>
+  <value feature="ADVRECEIVING">BILLVARIANCESTATUS</value>
+  <value>BINNUMBERS</value>
+  <value feature="REVENUERECOGNITION">CATCHUPPERIOD</value>
+  <value>CATEGORY</value>
+  <value>CHARGERULE</value>
+  <value feature="CHARGEBASEDBILLING">CHARGES</value>
+  <value feature="CHARGEBASEDBILLING">CHARGETYPE</value>
+  <value feature="CLASSES">CLASS</value>
+  <value>COMMITINVENTORY</value>
+  <value>COMMITMENTFIRM</value>
+  <value feature="GROSSPROFIT">COSTESTIMATE</value>
+  <value feature="GROSSPROFIT">COSTESTIMATERATE</value>
+  <value feature="GROSSPROFIT">COSTESTIMATETYPE</value>
+  <value>CREATEDFROM</value>
+  <value feature="BLANKETPURCHASEORDERS">CREATEDFROM</value>
+  <value>CREATEEXPENSEPLANSON</value>
+  <value feature="OUTSOURCEDMFG">CREATEOUTSOURCEDWO</value>
+  <value feature="DROPSHIPMENTS">CREATEPO</value>
+  <value feature="WORKORDERS">CREATEWO</value>
+  <value>CREDIT</value>
+  <value>CREDITTAX</value>
+  <value feature="SALESORDERS">CURRENTPERCENT</value>
+  <value feature="BILLSCOSTS">CUSTOMER</value>
+  <value>DATECOL</value>
+  <value feature="SUPPLYALLOCATION">DAYSLATE</value>
+  <value>DEBIT</value>
+  <value>DEBITTAX</value>
+  <value feature="REVENUERECOGNITION">DEFERREVREC</value>
+  <value feature="DEPARTMENTS">DEPARTMENT</value>
+  <value>DESCRIPTION</value>
+  <value>DISCOUNT</value>
+  <value feature="ADVANCEDREVRECPLUGIN">DONOTCREATEREVENUEELEMENT</value>
+  <value>DUEDATE</value>
+  <value feature="INTERCOMPANYAUTOELIMINATION">ELIMINATE</value>
+  <value>EMPLOYEE</value>
+  <value>EMPLOYEEFULLNAME</value>
+  <value>ENDDATE</value>
+  <value>ENTITY</value>
+  <value feature="GROSSPROFIT">ESTGROSSPROFIT</value>
+  <value feature="GROSSPROFIT">ESTGROSSPROFITPERCENT</value>
+  <value feature="CRMTIME">EVENT</value>
+  <value feature="SUPPLYCHAINCONTROLTOWER">EXCLUDEFROMPREDICTIVERISK</value>
+  <value>EXCLUDEFROMRATEREQUEST</value>
+  <value>EXPECTEDDELIVERYDATE</value>
+  <value feature="ADVRECEIVING">EXPECTEDRECEIPTDATE</value>
+  <value>EXPECTEDSHIPDATE</value>
+  <value>EXPENSEAMORTIZATIONRULE</value>
+  <value>EXPENSEPLAN</value>
+  <value>EXPENSEPLANSTATUS</value>
+  <value>FREEGIFTPROMOTION</value>
+  <value feature="ADVANCEDJOBS">FROMJOB</value>
+  <value feature="ADVRECEIVING">GENERATEACCRUALS</value>
+  <value feature="GIFTCERTIFICATES">GIFTCERTFIELDS</value>
+  <value feature="GLAUDITNUMBERING">GLNUMBER</value>
+  <value feature="GLAUDITNUMBERING">GLSEQUENCE</value>
+  <value>GROSSAMT</value>
+  <value feature="ADVBINSERIALLOTMGMT">INVENTORYDETAIL</value>
+  <value feature="CROSSSUBSIDIARYFULFILLMENT">INVENTORYLOCATION</value>
+  <value feature="CROSSSUBSIDIARYFULFILLMENT">INVENTORYSUBSIDIARY</value>
+  <value feature="BILLSCOSTS">ISBILLABLE</value>
+  <value>ISCLOSED</value>
+  <value feature="ADVANCEDJOBS">ISESTIMATE</value>
+  <value>ISTAXABLE</value>
+  <value>ITEM</value>
+  <value feature="STOREPICKUP">ITEMFULFILLMENTCHOICE</value>
+  <value feature="JOBS">JOB</value>
+  <value feature="LANDEDCOST">LANDEDCOSTCATEGORY</value>
+  <value>LASTPURCHASEPRICE</value>
+  <value feature="DOWNLOADITEMS">LICENSECODE</value>
+  <value>LINETAXCODE</value>
+  <value>LINETAXRATE</value>
+  <value feature="REQUISITIONS">LINKEDORDER</value>
+  <value feature="LOCATIONS">LOCATION</value>
+  <value feature="AUTOLOCATIONASSIGNMENT">LOCATIONAUTOASSIGNED</value>
+  <value feature="ADVRECEIVING">MATCHBILLTORECEIPT</value>
+  <value>MEMO</value>
+  <value feature="AUTOLOCATIONASSIGNMENT">NOAUTOASSIGNLOCATION</value>
+  <value feature="ITEMOPTIONS">OPTIONS</value>
+  <value feature="SUPPLYALLOCATION">ORDERALLOCATIONSTRATEGY</value>
+  <value>ORDERPRIORITY</value>
+  <value>PAYMENT</value>
+  <value feature="SALESORDERS">PERCENTCOMPLETE</value>
+  <value feature="DROPSHIPMENTS">PORATE</value>
+  <value>POVENDOR</value>
+  <value feature="MULTPRICE">PRICE</value>
+  <value feature="SUBSCRIPTIONBILLING">PRICEINTERVALFREQUENCYNAME</value>
+  <value feature="SUBSCRIPTIONBILLING">PRICEINTERVALREPEATEVERY</value>
+  <value feature="REVENUECOMMITMENTS">PROCESSEDBYREVCOMMIT</value>
+  <value>PRODUCTIONENDDATE</value>
+  <value>PRODUCTIONSTARTDATE</value>
+  <value feature="JOBCOSTING">PROJECTTASK</value>
+  <value>PROMISEDATE</value>
+  <value feature="PURCHASECONTRACTS">PURCHASECONTRACT</value>
+  <value>QUANTITY</value>
+  <value feature="SUPPLYALLOCATION">QUANTITYALLOCATED</value>
+  <value>QUANTITYAVAILABLE</value>
+  <value feature="SALESORDERS">QUANTITYBACKORDERED</value>
+  <value>QUANTITYCOMMITTED</value>
+  <value feature="SUPPLYALLOCATION">QUANTITYDEMANDALLOCATED</value>
+  <value feature="SALESORDERS">QUANTITYFULFILLED</value>
+  <value>QUANTITYONHAND</value>
+  <value feature="INBOUNDSHIPMENT">QUANTITYONSHIPMENTS</value>
+  <value feature="SALESORDERS">QUANTITYORDERED</value>
+  <value feature="PURCHASEORDERS">QUANTITYRECEIVED</value>
+  <value feature="SALESORDERS">QUANTITYREMAINING</value>
+  <value>RATE</value>
+  <value feature="SUPPLYALLOCATION">REQUESTEDDATE</value>
+  <value>REQUESTEDDELIVERYDATE</value>
+  <value>RESIDUAL</value>
+  <value feature="ADVANCEDREVENUERECOGNITION">REVENUERECOGNITIONRULE</value>
+  <value>REVRECENDDATE</value>
+  <value feature="REVENUERECOGNITION">REVRECSCHEDULE</value>
+  <value>REVRECSTARTDATE</value>
+  <value>SCHEDULE</value>
+  <value>SCHEDULENUM</value>
+  <value>SECONDARYQUANTITY</value>
+  <value>SECONDARYUNITS</value>
+  <value>SERIALNUMBERS</value>
+  <value feature="MULTISHIPTO">SHIPADDRESS</value>
+  <value feature="MULTISHIPTO">SHIPCARRIER</value>
+  <value feature="MULTISHIPTO">SHIPMETHOD</value>
+  <value>SOURCEEXPENSEDOC</value>
+  <value feature="ADVREVRECORADVEXPMGMT">SOURCEREVENUEPLAN</value>
+  <value>STARTDATE</value>
+  <value feature="CONSOLPAYMENTS">SUBNAME</value>
+  <value feature="SUBSCRIPTIONBILLING">SUBSCRIPTION</value>
+  <value feature="SUBSCRIPTIONBILLING">SUBSCRIPTIONLINE</value>
+  <value feature="SUBSCRIPTIONBILLING">SUBSCRIPTIONLINEPERIODAMOUNT</value>
+  <value feature="SUBSCRIPTIONBILLING">SUBSCRIPTIONLINERATE</value>
+  <value feature="SUBSIDIARIES">SUBSIDIARY</value>
+  <value>TARGETLOCATION</value>
+  <value>TARGETSUBSIDIARY</value>
+  <value>TAX1AMT</value>
+  <value>TAXACCOUNT</value>
+  <value>TAXAMOUNT</value>
+  <value>TAXBASIS</value>
+  <value>TAXCODE</value>
+  <value>TAXRATE1</value>
+  <value>TAXRATE2</value>
+  <value feature="REVENUERECOGNITION">TERMINMONTHS</value>
+  <value>TERMS</value>
+  <value feature="ADVSHIPPING">TOBEFULFILLED</value>
+  <value feature="ADVRECEIVING">TOBERECEIVED</value>
+  <value>TOTALAMOUNT</value>
+  <value feature="UNITSOFMEASURE">UNITS</value>
+  <value feature="REVRECVSOE">VSOEFIELDS</value>
+</list>

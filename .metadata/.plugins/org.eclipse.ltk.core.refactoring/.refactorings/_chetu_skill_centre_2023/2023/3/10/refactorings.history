@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename resource &apos;/_chetu_skill_centre_2023/Suitelet.js&apos; to &apos;CHT_SL_ASSIGNMENT_SV.js&apos;&#x0D;&#x0A;- Original project: &apos;_chetu_skill_centre_2023&apos;&#x0D;&#x0A;- Original element: &apos;Suitelet.js&apos;" description="Rename resource &apos;Suitelet.js&apos;" flags="7" id="org.eclipse.wst.jsdt.ui.rename.resource" input="Suitelet.js" name="CHT_SL_ASSIGNMENT_SV.js" stamp="1677999454290" version="1.0"/>
+</session>
